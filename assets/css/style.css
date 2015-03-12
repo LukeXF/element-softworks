@@ -1,0 +1,754 @@
+/* 
+    Made by Luke Brown
+    me@luke.sx
+*/
+
+/* ////////////////////////////////////
+    TOP DAWG STYLING
+//////////////////////////////////// */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+html, body {
+    height: 100%;
+    max-width: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -80px;
+}
+.footer {
+    height: 40px;
+}
+.push {
+    height: 100px;
+}
+
+body {
+    margin: 0;
+    font-family: "proxima-nova",sans-serif;
+    line-height: 22px;
+    background-color: #f4f4f4;
+    color: #676767;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-weight: 300;
+    background-color: rgb(34, 34, 34);
+}
+
+.spacing {
+    padding-top: 130px;
+}
+*:hover {
+    text-decoration: none !important;
+}
+
+.left {
+    text-align: left !important;
+}
+
+.center, .middle {
+    text-align: center !important;
+}
+
+.right {
+    text-align: right !important;
+}
+
+.item.left {
+    text-align: inherit !important;
+}
+
+.item.right {
+    text-align: inherit !important;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-weight: 300;
+}
+
+@media (min-width: 1300px) {
+    .container {
+        width: 1300px;
+    }
+}
+
+
+
+
+
+
+/* ////////////////////////////////////
+    NAVBAR STYLING
+//////////////////////////////////// */
+
+.navcontain {
+    max-width: 980px;
+    width: 950px;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    padding: 9px 15px 9px;
+    color: #869690;
+    text-decoration: none;
+}
+
+#top-nav.navbar .nav .smaller {
+    margin: -13px;
+}
+
+#top-nav{
+    border-bottom: 1px solid transparent;
+    -webkit-transform: translateZ(0);
+    background-color: rgb(34, 34, 34);
+    color: rgb(51, 51, 51);
+
+}
+
+#top-nav.navbar{
+    margin-bottom: 0px;
+    z-index: 99999;
+}
+
+#top-nav.navbar .nav {
+    margin: 8px 0px;
+} 
+
+#top-nav.navbar .nav > li > a, .dropdown-menu > li > a {
+    padding: 30px 40px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-top: -10px;
+    -webkit-transition: background-color 500ms ease;
+    -moz-transition: background-color 500ms ease;
+    -o-transition: background-color 500ms ease;
+    transition: background-color 500ms ease;
+}
+
+    .navbar-nav > li > a, 
+    .navbar-brand, .shrink > li > a, 
+    .red-button, 
+    .red-button:hover,
+    .merlin-slider {
+    -webkit-transition: all 0.3s !important;
+    -moz-transition: all 0.3s !important;
+    -ms-transition: all 0.3s !important;
+    -o-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+}
+
+.navbar .navbar-brand {
+    margin-left: -15px !important;
+    font-size: 44px;
+    font-weight: 300;
+    position: absolute;
+    width: 101%;
+    left: 0;
+    color: white;
+    text-align: center;
+    margin: auto;
+    cursor: default;
+    padding: 40px 30px;
+}
+
+.navbar .nav > li > a:hover {
+    color: #ec2125;
+    font-weight: 400 !important;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand:hover {
+    color: white;
+}
+
+/* Shrink Styling */
+.shrink > li > a {
+    padding: 10px 40px !important;
+}
+
+.shrink > li > a.account {
+    padding: 15px !important;
+    padding-top: 11px !important;
+}
+
+.shrink > div > a.navbar-brand {
+    padding: 22px 30px;
+    font-size: 38px;
+}
+
+.shrink > li > a.account {
+    padding-left: 15px !important;
+}
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////
+    SLIDER STYLING
+//////////////////////////////////// */
+
+.carousel-caption {
+    display: none;
+    font-size: 1px;
+    color: transparent;
+}
+#header > .container {
+    padding-top: 72px;
+}
+
+
+.merlin-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    filter: alpha(opacity=50);
+    opacity: .5;
+    padding-top: 240px;
+    margin-bottom: -50px;
+    width: 46px;
+    background: #181818;
+}
+
+.merlin-slider:hover {
+    filter: alpha(opacity=80);
+    opacity: .8;
+    color: white;
+}
+
+.merlin-slider.left {
+    left: 0;
+    right: auto;
+    padding-left: 7px;
+}
+.merlin-slider.right {
+    right: 0;
+    left: auto;
+    padding-right: 7px;
+}
+
+.carousel-indicators {
+    bottom: -70px;
+    z-index: 9999;
+}
+
+#merlinslider .carousel-inner {
+    min-height: 370px;
+}
+.carousel-indicators .active {
+    background-color: #777;
+}
+.carousel-indicators li {
+    border: 1px solid #777;
+}
+
+.carousel-inner > *, 
+.carousel-inner > * > *, 
+.carousel-inner > * > * > *, 
+.carousel-inner > * > * > * > * {
+    color: white;
+    font-weight: 100;
+    text-shadow: rgba(0, 0, 0, 0.37) 0.1em 0.1em 0.2em;
+}
+
+.carousel-inner > * > * > * > p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.blur {
+    position: absolute;
+    z-index: 0;
+    width: 1300px;
+    height: 500px;
+    margin: -15px;
+    margin-top: 7px;
+    background-size: 108%;
+    display: -webkit-box !important;
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+#merlinslider {
+    padding-top: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.merlin-slider:hover,
+.merlin-slider:focus,
+.merlin-slider:active {
+    color: white;
+}
+
+#merlinslider h1 {
+    font-size: 50px;
+}
+
+#merlinslider h4 {
+    font-size: 20px;
+}
+
+
+/* ////////////////////////////////////
+    MAIN SITE STYLING
+//////////////////////////////////// */
+
+.abovetop > h1, h1.main {
+    text-align: center;
+    color: #555;
+    padding: 20px;
+    font-weight: 300;
+    z-index: 20;
+    position: relative;
+}
+
+.top:before {
+    content: "";
+    height: 50px;
+    background-color: black; 
+}
+.top, .bottom {
+    -webkit-background-size: 1280px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #f4f4f4;
+    display: block;
+    height: 100px;
+    line-height: 18px;
+    width: 108%;
+    z-index: 32;
+    margin-bottom: -70px;
+    position: relative;
+    margin-left: -15px;
+}
+.top {
+    background-image: url(../img/top.png);
+    margin-bottom: -55px;
+    position: relative;
+}
+
+.bottom {
+    background-image: url(../img/bottom.png);
+    margin-bottom: -45px;
+}
+
+.main-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-cream {
+    background-color: #f6f6f6;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-white {
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.main-grey {
+    background-color: #252525;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.main-dark {
+    background-color: #292929;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    color: #eee;
+}
+
+.main-dark .main {
+    color: #eee;
+}
+
+.main-first {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 110px;
+}
+
+.main-last {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-bottom: 40px;
+}
+
+
+
+.btn-red {
+    background-color: #ec2125 !important;
+    color: white;
+    line-height: 9px;
+    font-size: 14px;
+    padding: 13px 37px 12px 14px;
+    background-size: 23px;
+    background-position: 110px 11px;
+    margin-right: 5px;
+    display: inline;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    background-image: url(../img/right-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    border: transparent;
+    text-shadow: none;
+    font-weight: 300;
+    font-family: 'Lato'
+}
+
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active {
+    color: white;
+}
+
+p.main {
+    margin: 0 0 10px;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.fa-stack {
+    margin: auto;
+    display: block;
+}
+
+.fa-stack > i {
+    -ms-transform: rotate(-10deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-10deg);
+}
+
+h1.main.side {
+    padding: 0px;
+}
+
+hr {
+    margin: 30px;
+    border-top: #e5e5e5 1px solid;
+    border-bottom: white 1px solid;
+}
+
+.abovetop > h1 {
+    text-align: center;
+    color: #555;
+    padding: 20px;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: -45px;
+    z-index: 20;
+    position: relative;
+    z-index: 999;
+}
+
+.hidelogo {
+    opacity: 0 !important;
+    -webkit-transition: all 1s !important;
+    -moz-transition: all 1s !important;
+    -ms-transition: all 1s !important;
+    -o-transition: all 1s !important;
+    transition: all 1s !important;
+}
+
+.twitter {
+    width: 100%;
+    display: inline-table;
+    text-align: center;
+}
+
+
+.twittername {
+    margin: auto;
+    background: #222;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 15px;
+    height: 79px;
+}
+
+
+.twittername span{
+
+   float: left;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+.twitterlogo {
+    border-radius: 50px;
+    margin: auto;
+    display: -webkit-box;
+    width: 50px;
+}
+
+.twitterfollow {
+    margin: auto;
+    background: #222;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 15px;
+    height: 79px;
+}
+
+.twittername b {
+    font-size: 15px;
+    display: -webkit-inline-box;
+    float: left;
+    position: absolute;
+    left: 0;
+    margin-top: 29px;
+    margin-left: 89px;
+}
+
+.twittername span {
+    margin-top: 4px;
+}
+
+.twittername img {
+    float: left;
+}
+
+.twitter .item {
+    font-size: 20px;
+    line-height: 23px;
+    min-height: 60px;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.twitterfollow a {
+    background: rgb(56, 53, 48);
+    color: #eee;
+    padding: 14px 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    float: right;
+}
+
+.twitterfollow a:hover,
+.twitterfollow a:focus {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.twitterfollow a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.twittercontent {
+    background: rgba(34, 34, 34, 0.59);
+    padding: 20px 50px;
+    box-shadow: 0px 2px 30px #383838;
+}
+
+.twitter .carousel-indicators {
+    bottom: -185;
+    z-index: 9999;
+}
+
+.carousel-indicators li {
+    border: 1px solid #777;
+    width: 20px;
+    height: 8px;
+}
+
+.carousel-indicators li.active {
+    border: 1px solid #777;
+    background: #777;
+    margin: 1px;
+    width: 20px;
+    height: 8px;
+}
+
+/* ////////////////////////////////////
+    CLIENTS STYLING
+//////////////////////////////////// */
+
+.col-md-2.clients img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: none;
+    opacity: 1;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
+.col-md-2.clients img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/s….3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+    opacity: 0.5;
+    vertical-align: -webkit-baseline-middle;
+    margin: 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////
+    MEDIA QUEIRES STYLING
+//////////////////////////////////// */
+
+
+@media (max-width: 767px) {
+    .bottom {
+        margin-top: -45px;
+    }
+    .mobile-bottom {
+        background-color: #f6f6f6;
+        height: 80px;
+        width: 100%;
+        margin: -15px;
+        margin-top: 0px;
+        z-index: 5;
+        position: absolute;
+    }
+
+    #merlinslider .carousel-indicators {
+        bottom: -55px;
+    }
+
+    .twitter .carousel-indicators {
+        display: none
+    }
+}
+
+@media (min-width: 768px) {
+    .top, .bottom {
+        width: 750px;
+        margin-top: 10px;
+    }
+    .blur {
+        width: 750px;
+        height: 490px;
+        background-size: 120%;
+    }
+    .bottom {
+        margin-top: 0px;
+    }
+    #merlinslider .carousel-indicators {    
+        bottom: -85px;
+    }
+    .logo-fixed {
+        display: none;
+        -webkit-transition: all 1s !important;
+        -moz-transition: all 1s !important;
+        -ms-transition: all 1s !important;
+        -o-transition: all 1s !important;
+        transition: all 1s !important;
+    }
+    .twitter .carousel-indicators {
+        bottom: -4;
+    }
+}
+
+@media (min-width: 992px) {
+    .top, .bottom {
+        width: 970px;
+        margin-top: 3px;
+    }
+    .blur {
+        width: 970px;
+    }
+    #merlinslider .carousel-indicators {    
+        bottom: -85px;
+    }
+    .logo-fixed {
+        background: #222;
+        border-radius: 5px;
+        margin: 3px;
+        background-image: url(../img/logo-clear.png);
+        position: fixed;
+        z-index: 99999999;
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 12px;
+        display: -webkit-box;
+        -webkit-transition: opacity 1s !important;
+        -moz-transition: opacity 1s !important;
+        -ms-transition: opacity 1s !important;
+        -o-transition: opacity 1s !important;
+        transition: opacity 1s !important;
+        opacity: 0.5;
+    }
+    .logo-fixed:hover {        
+        opacity: 1;
+    }
+    .twitter .carousel-indicators {
+        bottom: -195;
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .top, .bottom {
+        width: 1170px;
+    }
+    .blur {
+        width: 1170px;
+    }
+    #merlinslider .carousel-indicators {    
+        bottom: -90px;
+    }
+    .twitter .carousel-indicators {
+        bottom: -185;
+    }
+}
+
+
+
+@media (min-width: 1300px) {
+    .top, .bottom {
+        width: 1300px;
+    }
+    .blur {
+        width: 1300px;
+    }
+}
+
+
+
+

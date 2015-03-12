@@ -1,0 +1,23 @@
+#
+#   Author :    Luke Brown
+#   License:    Contracted work - Written permission required from me for third party use.
+#   Created:    March 2015
+#   Contact:    me@luke.sx
+#
+
+RewriteEngine On
+Options -Indexes
+ErrorDocument 403 404.php
+ErrorDocument 404 404.php
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}/$1\.php -f
+RewriteRule ^([^/]+)/?$ $1.php [L]
+
+# RewriteRule ^shop/([^/]+)$ shop.php?product-type=$1
+
+php_flag  display_errors        on
+php_value error_reporting       2039
