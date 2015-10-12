@@ -5,6 +5,8 @@
 #   Contact:    me@luke.sx
 #
 
+Header add Access-Control-Allow-Origin "*" 
+
 RewriteEngine On
 Options -Indexes
 ErrorDocument 403 404.php
@@ -21,3 +23,6 @@ RewriteRule ^([^/]+)/?$ $1.php [L]
 
 php_flag  display_errors        on
 php_value error_reporting       2039
+
+
+RewriteCond %{REQUEST_URI}  !(isotope) [NC]

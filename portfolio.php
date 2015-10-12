@@ -1,12 +1,12 @@
 <?php
     include('assets/header.php');
-    $activeTab = "Home";
+    $activeTab = "Work";
     include('assets/navbar.php');
 
     if ($login->isUserLoggedIn() == true) {
-        include("views/v-index.php");
+        include("views/v-portfolio.php");
     } else {
-        include("views/v-index.php");
+        include("views/v-portfolio.php");
     }
 
     include('assets/footer.php');
