@@ -5,14 +5,16 @@
 	<div class="row">
 		<div class="col-md-6">
 			<p>
-				For all enquiries email: <a href="mailto:me@luke.sx">me@luke.sx</a>
-				<br>Made with Love
+				Providing the web with digital creativity since 2012
+				<br>For all enquiries email: <a href="mailto:me@luke.sx">me@luke.sx</a>
+				
 			</p>
 		</div>
 		<div class="col-md-6" align="right">
 			<p>
-				© 2014-<?php echo date('Y'); ?> <?php echo $brand; ?>
-				<br><a href="http://luke.sx">Designed</a>
+				Registed private limited company in England and Wales
+				<br>© <?php echo date('Y'); ?> <?php echo $brand; ?> Ltd
+				
 			</p>
 		</div>
 	</div>

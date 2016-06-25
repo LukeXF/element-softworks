@@ -57,58 +57,14 @@
     $i = 0;
     echo "<div class='twitter'>
 
-    <div class='col-xs-6' style='padding-right: 0px; z-index: 999;'>
-        <h3 class='twittername'><img class='twitterlogo' src='" . $tweets[0]['user']['profile_image_url_https']. "'>
+        <div class='col-xs-6' style='padding-right: 0px; z-index: 999;'>
+            <h3 class='twittername'><img class='twitterlogo' src='" . $tweets[0]['user']['profile_image_url_https']. "'>
 
-        <span>@elementsworks</span><b>" . $tw['followers'] . " followers,</b></h3>
-    </div>
-    <div class='col-xs-6' style='padding-left: 0px; z-index: 999;'>
-        <h3 class='twitterfollow'><a href='https://twitter.com/elementsworks' target='_blank'>Follow Us</a></h3>
-    </div>
-
-    ";
-
-
-    echo "          
-        <div id='carousel-example-generic' class='carousel slide' data-ride='carousel'>
-            <!-- Indicators -->
-            <ol class='carousel-indicators'>
-                <li data-target='#carousel-example-generic' data-slide-to='0' class='active'></li>
-                <li data-target='#carousel-example-generic' data-slide-to='1'></li>
-                <li data-target='#carousel-example-generic' data-slide-to='2'></li>
-            </ol>
-
-
-              <!-- Wrapper for slides -->
-                    <div class='col-md-10 col-md-offset-1 twittercontent'>
-              <div class='carousel-inner' role='listbox'>";
-
-    while ( $i < $twitterFeedCount) {       
-        $usersTimezone = 'America/New_York';
-        $date = new DateTime( $tweets[$i]['created_at'], new DateTimeZone($usersTimezone) );
-        $date = $date->format('d M');
+            <span>@elementsworks</span><b>" . $tw['followers'] . " followers</b></h3>
+        </div>
+        <div class='col-xs-6' style='padding-left: 0px; z-index: 999;'>
+            <h3 class='twitterfollow'><a href='https://twitter.com/elementsworks' target='_blank'>Follow Us</a></h3>
+        </div>
        
-       if ($i == 0) {
-           echo "
-                <div class='item active'>
-                 " .  $tweets[$i]['text'] . "
-                </div>";
-       } else {
-
-        echo "
-  
-                <div class='item'>
-                 " .  $tweets[$i]['text'] . "
-                </div>
-
-            ";
-        }
-
-        $i++;
-    }
-    echo "              </div>
-            </div>
-            </div>
-
-            </div>";
+    </div>";
 ?>

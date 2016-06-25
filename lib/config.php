@@ -13,7 +13,7 @@
 	if(!in_array($_SERVER['REMOTE_ADDR'], $localhost)){
 
     	$dotPHP = ""; // display .php extensions
-		$domain = "http://elements-softworks.co.uk/"; // the actual domain this site runs off
+		$domain = "http://elementsoftworks.co.uk/"; // the actual domain this site runs off
 
 		$config = array(
 			'admin_username' => 'admin', // username used to login to the admin area

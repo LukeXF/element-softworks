@@ -23,13 +23,13 @@
 	$navbar = array(
 		"Home" =>   array(
 			"active" => "",
-			"url" => "#",
+			"url" => $domain,
 			"submenu" => array()
 		),
 
 		"About" => array(
 			"active" => "",
-			"url" => "#",          
+			"url" => $domain . "about",          
 			"submenu" => array()
 		)
 
@@ -54,15 +54,15 @@
 
 	} else {
 		$navbar2 = array(
-			"Contact" =>   array(
+			"Work" =>   array(
 				"active" => "",
-				"url" => $domain . "register" . $dotPHP,
+				"url" => $domain . "portfolio", 
 				"submenu" => array()
 			),
 
-			"Login" => array(
+			"Contact" => array(
 				"active" => "",
-				"url" => $domain . "login" . $dotPHP,          
+				"url" => $domain . "contact", 	         
 				"submenu" => array()
 			)
 		);
@@ -84,8 +84,26 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400|Raleway:400,300' rel='stylesheet' type='text/css'>
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="<?php echo $domain; ?>assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo $domain; ?>assets/css/flaticon.css">
 		<link rel="icon" type="image/png" href="<?php echo $domain; ?>assets/img/logo-circle.png">
 
+
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@elementsworks">
+		<meta name="twitter:creator" content="@elementsworks">
+		<meta name="twitter:title" content="Element Softworks Ltd">
+		<meta name="twitter:description" content="Welcome to Element Softworks, we are a registered development company aimed at bridging the gap of going from the drawing board to full production of the final solution operating from over four continents. We design, we developer, we deliver.">
+		<meta name="twitter:image" content="<?php echo $domain; ?>assets/img/background-blur.png">
+
+		<meta property="og:description" content="Welcome to Element Softworks, we are a registered development company aimed at bridging the gap of going from the drawing board to full production of the final solution operating from over four continents. We design, we developer, we deliver."/>
+		<meta property="og:url" content="<?php echo $domain; ?>"/>
+		<meta property="og:image" content="<?php echo $domain; ?>assets/img/background-blur.png"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:site_name" content="Element Softworks Ltd"/>
+
+		<meta itemprop="name" content="Element Softworks Ltd">
+		<meta itemprop="description" content="Welcome to Element Softworks, we are a registered development company aimed at bridging the gap of going from the drawing board to full production of the final solution operating from over four continents. We design, we developer, we deliver.">
+		<meta itemprop="image" content="<?php echo $domain; ?>assets/img/background-blur.png">
 
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
 		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>

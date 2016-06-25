@@ -1,4 +1,4 @@
-<?php
+hi<?php
     include('assets/header.php');
     $activeTab = "Home";
     include('assets/navbar.php');
